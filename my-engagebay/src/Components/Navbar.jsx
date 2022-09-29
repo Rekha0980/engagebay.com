@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -6,7 +7,7 @@ function Navbar() {
     return (
      <div className="main">
       <div>
-      <img id="logo"src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg" alt="netlogo" />
+      <Link to="/"><img id="logo"src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg" alt="netlogo" /></Link>
       </div>
     
       <div >
@@ -36,7 +37,7 @@ function Navbar() {
         </select>
       </div>
       <div><p>Blog</p></div>
-        <div><p>Login</p></div>
+        <div><Link to="/login">Login</Link></div>
      <div><button  className="btn">Free Demo</button></div>
      <div ><button  className="btn1">Free Signup</button></div>
      </div>
