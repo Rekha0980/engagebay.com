@@ -4,11 +4,15 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import AllRoutes from './Components/AllRoutes';
 
+import Footer from './Components/Footer';
+
 function App() {
   return (
     <div className="App">
      <Navbar/>
      <AllRoutes/>
+     <Footer/>
+     
     </div>
   );
 }

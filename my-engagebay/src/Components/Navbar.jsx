@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { FaRegCheckCircle } from "react-icons/fa";
 
 
 function Navbar() {
@@ -31,15 +31,17 @@ function Navbar() {
       </div>
       <div >
       <select name="" id="">
-          <option value="">Free Tool</option>
-          <option value="">Discusses</option>
-          <option value="">Task</option>
+      <option value="">Free Tools</option>
+          <option value="">UMT Builder</option>
+          <option value="">Email Signature</option>
+          <option value="">Email Tracker</option>
         </select>
       </div>
       <div><p>Blog</p></div>
         <div><Link to="/login">Login</Link></div>
      <div><button  className="btn">Free Demo</button></div>
      <div ><button  className="btn1">Free Signup</button></div>
+     <FaRegCheckCircle />
      </div>
     );
   }

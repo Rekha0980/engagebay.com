@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Grid, GridItem,Img,Input,Text,Image ,Divider } from "@chakra-ui/react"
+import { FaRegCheckCircle } from "react-icons/fa";
 
 function Home(){
     return(
@@ -68,13 +69,13 @@ function Home(){
     </Box>
     <Text textAlign="left" marginBottom="20px">Popular Feature</Text>
     <Flex>
-        <Text marginRight={50} marginBottom="20px">Contact Management</Text>
-        <Text>Deal Management</Text>
+    <FaRegCheckCircle color="blue"/> <Text marginRight={50} marginBottom="20px">Contact Management</Text>
+    <FaRegCheckCircle color="blue"/>     <Text>Deal Management</Text>
         
     </Flex>
     <Flex>
-    <Text marginRight={50} textAlign="left">Sales Automation</Text>
-        <Text textAlign="left">Appointment Scheduling</Text>
+    <FaRegCheckCircle color="blue"/> <Text marginRight={50} textAlign="left">Sales Automation</Text>
+    <FaRegCheckCircle color="blue"/>    <Text textAlign="left">Appointment Scheduling</Text>
     </Flex>
    <Flex>
    <Button backgroundColor="#6639B3" color="white" width="35%" _hover="none" marginTop="20px" >Get Started</Button>
@@ -96,13 +97,13 @@ function Home(){
     </Box>
     <Text textAlign="left" marginBottom="20px">Popular Feature</Text>
     <Flex>
-        <Text marginRight={50} marginBottom="20px">Forms & Landing Pages</Text>
-        <Text>Email Sequence</Text>
+    <FaRegCheckCircle color="blue"/>   <Text marginRight={50} marginBottom="20px">Forms & Landing Pages</Text>
+    <FaRegCheckCircle color="blue"/>    <Text>Email Sequence</Text>
         
     </Flex>
     <Flex>
-    <Text marginRight={50} textAlign="left">Marketing Automation</Text>
-        <Text textAlign="left">Email Template Builder</Text>
+    <FaRegCheckCircle color="blue"/>  <Text marginRight={50} textAlign="left">Marketing Automation</Text>
+    <FaRegCheckCircle color="blue"/>   <Text textAlign="left">Email Template Builder</Text>
     </Flex>
    <Flex>
    <Button backgroundColor="#6639B3" color="white" width="35%" _hover="none" marginTop="20px" >Get Started</Button>
@@ -129,13 +130,13 @@ function Home(){
     </Box>
     <Text textAlign="left" marginBottom="20px">Popular Feature</Text>
     <Flex>
-        <Text marginRight={50} marginBottom="20px">Ticket Management</Text>
-        <Text>Views</Text>
+    <FaRegCheckCircle color="blue"/>  <Text marginRight={50} marginBottom="20px">Ticket Management</Text>
+    <FaRegCheckCircle color="blue"/>    <Text>Views</Text>
         
     </Flex>
     <Flex>
-    <Text marginRight={50} textAlign="left">Macro</Text>
-        <Text textAlign="left">Tickt Automation</Text>
+    <FaRegCheckCircle color="blue"/>  <Text marginRight={50} textAlign="left">Macro</Text>
+    <FaRegCheckCircle color="blue"/>     <Text textAlign="left">Tickt Automation</Text>
     </Flex>
    <Flex>
    <Button backgroundColor="#6639B3" color="white" width="35%" _hover="none" marginTop="20px" >Get Started</Button>
@@ -157,13 +158,13 @@ function Home(){
     </Box>
     <Text textAlign="left" marginBottom="20px">Popular Feature</Text>
     <Flex>
-        <Text marginRight={50} marginBottom="20px">Instant Support</Text>
-        <Text>Chat Form Customisation</Text>
+    <FaRegCheckCircle color="blue"/>  <Text marginRight={50} marginBottom="20px">Instant Support</Text>
+    <FaRegCheckCircle color="blue"/>    <Text>Chat Form Customisation</Text>
         
     </Flex>
     <Flex>
-    <Text marginRight={50} textAlign="left">Shortcuts</Text>
-        <Text textAlign="left">Notifications</Text>
+    <FaRegCheckCircle color="blue"/>  <Text marginRight={50} textAlign="left">Shortcuts</Text>
+    <FaRegCheckCircle color="blue"/>    <Text textAlign="left">Notifications</Text>
     </Flex>
    <Flex>
    <Button backgroundColor="#6639B3" color="white" width="35%" _hover="none" marginTop="20px" >Get Started</Button>
@@ -196,35 +197,36 @@ function Home(){
  <Text fontSize={40} fontWeight="bold" marginTop="30px" >Do It All With EngageBay</Text>
  <Text fontSize={20}>Stop paying thousands of dollars to dozens of marketing, sales, and support software. Experience the world's most affordable, unified software. EngageBay's all-in-one CRM software is the most comprehensive solution for your business.</Text>
 <Box margin="auto" w="80%" marginTop="40px">
-    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" >
+    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" gap="5px">
         <GridItem >
-           <Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%" >
-           <Image boxSize='70px'  border="1px solid orange"  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/automation.svg"/>
-            <Text marginTop="10px">Automations</Text>
+           <Box border="2px solid transparent" borderRadius="10px"backgroundColor="#f5f7fb" h='190px' alignItems="center" padding="40px" width="95%" >
+           <Image boxSize='70px'    src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/automation.svg"/>
+            <Text marginTop="10px" >Automations</Text>
            </Box>
             </GridItem>
            
-        <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+        <GridItem><Box  border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb" h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calling.svg"/>
         <Text marginTop="10px">Calling</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/company-management.svg"/>
         <Text marginTop="10px">Company Management</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/contact-management.svg"/>
         <Text marginTop="10px">Contact Management</Text>
+        
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/deal-management.svg"/>
         <Text marginTop="10px">Deal Management</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-broadcast.svg"/>
         <Text marginTop="10px">Email Broadcaste</Text>
         </Box>
@@ -233,40 +235,57 @@ function Home(){
 </Box>
 
 <Box margin="auto" w="80%" marginTop="40px">
-    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" >
+    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" gap="5px" >
         <GridItem >
-           <Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
            <Image boxSize='70px'  border="1px solid orange"  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-sequences.svg"/>
             <Text marginTop="10px">Email Sequence</Text>
            </Box>
             </GridItem>
            
-        <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+        <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb" h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-template-builder.svg"/>
         <Text marginTop="10px">Email Template Builder</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/forms.svg"/>
         <Text marginTop="10px">Forms</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/help-desk.svg"/>
         <Text marginTop="10px">HelpDesk</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/landing-pages.svg"/>
-        <Text marginTop="10px">Landing Pages</Text>
+        <Text marginTop="10px"  >Landing Pages</Text>
         </Box>
            </GridItem>
-           <GridItem><Box border="1px solid orange"  h='190px' alignItems="center" padding="40px" width="95%">
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
         <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/live-chat.svg"/>
         <Text marginTop="10px">Live Chat</Text>
         </Box>
            </GridItem>
            </Grid>
+</Box>
+<Box height="420px" backgroundColor=" #f8f9fa !important" padding="120px" marginTop="50px">
+    <Text fontSize={30} fontWeight="bold">Simplify Marketing, Sales, & Support with the best free</Text>
+    <Text fontSize={28} fontWeight="bold" color="blue">All-In-One CRM software</Text>
+    <Box maxW="600px" mx="auto" marginTop="20px">
+        <Flex>
+<Input bgColor="white" justifySelf="center" type="text" w="500px"padding='8px' h="50px"placeholder="Your email address" borderRadius={30} />
+            <Button  colorScheme='orange' size="lg" borderRadius={30}>Get Started</Button>
+                </Flex>
+                <Box margin="auto" width="80%"  marginTop="20px">
+                <Flex>
+                <FaRegCheckCircle color="blue"/>     <Text marginRight={20} fontWeight="bold">Free for 15 users</Text>
+                <FaRegCheckCircle color="blue"/>   <Text fontWeight="bold">No credit card required</Text>
+                </Flex>
+                </Box>
+              
+               </Box>
 </Box>
  
 </Box>
