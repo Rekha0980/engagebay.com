@@ -8,3 +8,12 @@
     width:30%;
     height: 100px;
 }
+.cont {
+    display: flex;
+   
+    height: 200px;
+  }
+  .cont .box {
+    margin-right: 10px;
+    width: 200px;
+  }

@@ -41,7 +41,7 @@ function Navbar() {
         <div><Link to="/login">Login</Link></div>
      <div><button  className="btn">Free Demo</button></div>
      <div ><button  className="btn1">Free Signup</button></div>
-     <FaRegCheckCircle />
+    
      </div>
     );
   }

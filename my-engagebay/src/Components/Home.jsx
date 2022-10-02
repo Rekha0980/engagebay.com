@@ -14,7 +14,7 @@ function Home(){
             <Button  colorScheme='teal' size="lg" borderRadius={30}>Get Started</Button>
                 </Flex>
                </Box>
-               <Box  margin="auto"border="1px solid red" width="80%" marginTop="20px">
+               <Box  margin="auto"width="80%" marginTop="20px">
                     <Img src="https://cdn5.engagebay.com/new/assets/img/banner-image.svg" size="xl" />
                 </Box>
                 <Box backgroundImage="https://cdn5.engagebay.com/new/assets/img/patterns/bg-with-dotted.svg" margin="auto" width="90%" 
@@ -175,7 +175,7 @@ function Home(){
  {/* ///////////////////////////////////////////////////////////////////////////////////// */}
  <Box  background="#2C4FBF" marginTop="20px" height="350px" padding="40px">
     <Text marginTop="20px" fontSize={25} color="white">HAPPY CUSTOMERS SHARE GREAT REVIEWS ON G2</Text>
- <Box width="80%" margin="auto"  height="150px"  border="1px solid black"  marginTop="30px">
+ <Box width="80%" margin="auto"  height="150px"   marginTop="30px">
  <Flex >
  <Image height={128} width={99} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_AsiaPacific_HighPerformer.svg" />
 
