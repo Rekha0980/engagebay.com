@@ -1,10 +1,13 @@
 import { Box, Button, Flex, Grid, GridItem,Img,Input,Text,Image ,Divider } from "@chakra-ui/react"
 import { FaRegCheckCircle } from "react-icons/fa";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 function Home(){
     return(
 <Box>
- <Text fontSize={80} marginTop="120px">Market better. Sell faster.</Text>
+    <Navbar/>
+ <Text fontSize={80} marginTop="100px">Market better. Sell faster.</Text>
  <Text fontSize={80} marginTop="-20px">Support smarter</Text>
  <Text fontSize={30} >One platform for all your Marketing, Sales, and Support teams</Text>
 
@@ -238,7 +241,7 @@ function Home(){
     <Grid templateColumns='repeat(6, 1fr)'   padding="10px" gap="5px" >
         <GridItem >
            <Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
-           <Image boxSize='70px'  border="1px solid orange"  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-sequences.svg"/>
+           <Image boxSize='70px'    src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-sequences.svg"/>
             <Text marginTop="10px">Email Sequence</Text>
            </Box>
             </GridItem>
@@ -270,6 +273,114 @@ function Home(){
            </GridItem>
            </Grid>
 </Box>
+<Box margin="auto" w="80%" marginTop="40px">
+    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" gap="5px" >
+        <GridItem >
+           <Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <Image boxSize='70px'   src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/milestone-tracking.svg"/>
+            <Text marginTop="10px">Milestone Tracking</Text>
+           </Box>
+            </GridItem>
+           
+        <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb" h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calendar.svg"/>
+        <Text marginTop="10px">Calender</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/products.svg"/>
+        <Text marginTop="10px">Products</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/proposal.svg"/>
+        <Text marginTop="10px">Proposal</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/push-notifications.svg"/>
+        <Text marginTop="10px"  >Push Notification</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/segmentation.svg"/>
+        <Text marginTop="10px">Segmentation</Text>
+        </Box>
+           </GridItem>
+           </Grid>
+</Box>
+<Box margin="auto" w="80%" marginTop="40px">
+    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" gap="5px" >
+        <GridItem >
+           <Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <Image boxSize='70px'    src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/site-messaging.svg"/>
+            <Text marginTop="10px">Site Messenging</Text>
+           </Box>
+            </GridItem>
+           
+        <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb" h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/sms-broadcast.svg"/>
+        <Text marginTop="10px">SMS Broadcasting</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/social-posts-scheduling.svg"/>
+        <Text marginTop="10px">Social Post Scheduling</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/social-suite.svg"/>
+        <Text marginTop="10px">Social Suit </Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/landing-pages.svg"/>
+        <Text marginTop="10px"  >Sticky Bars</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/task-management.svg"/>
+        <Text marginTop="10px">Task Management</Text>
+        </Box>
+           </GridItem>
+           </Grid>
+</Box>
+<Box margin="auto" w="80%" marginTop="40px">
+    <Grid templateColumns='repeat(6, 1fr)'   padding="10px" gap="5px" >
+        <GridItem >
+           <Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%" >
+           <Image boxSize='70px'   src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/team-management.svg"/>
+            <Text marginTop="10px">Team Management</Text>
+           </Box>
+            </GridItem>
+           
+        <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb" h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/video-templates.svg"/>
+        <Text marginTop="10px">Video Templates </Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/web-analytics.svg"/>
+        <Text marginTop="10px">Web Analytics</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/ab-landing-pages.svg"/>
+        <Text marginTop="10px">A/B Landing Pages</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/custom-reporting.svg"/>
+        <Text marginTop="10px"  >Custome Reporting</Text>
+        </Box>
+           </GridItem>
+           <GridItem><Box border="2px solid transparent" borderRadius="10px" backgroundColor="#f5f7fb"  h='190px' alignItems="center" padding="40px" width="95%">
+        <Image  boxSize='70px'  src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/workflows.svg"/>
+        <Text marginTop="10px">Workflows</Text>
+        </Box>
+           </GridItem>
+           </Grid>
+</Box>
 <Box height="420px" backgroundColor=" #f8f9fa !important" padding="120px" marginTop="50px">
     <Text fontSize={30} fontWeight="bold">Simplify Marketing, Sales, & Support with the best free</Text>
     <Text fontSize={28} fontWeight="bold" color="blue">All-In-One CRM software</Text>
@@ -287,7 +398,7 @@ function Home(){
               
                </Box>
 </Box>
- 
+<Footer/>
 </Box>
         
     
