@@ -51,7 +51,7 @@ const [data,setData]=useState([])
                         <FormControl>
                             <FormLabel marginLeft="50px" marginTop="40px">Name</FormLabel>
                             <Input type='text' placeholder="Name" id="name" value={user.name} name="name" onChange={handleChange} width="80%" padding="25px" />
-                            <FormLabel marginLeft="50px" marginTop="30px">Username</FormLabel>
+                            <FormLabel marginLeft="50px" marginTop="30px">Email</FormLabel>
                             <Input type='text' placeholder="Work email" id="email"value={user.email} name="email" onChange={handleChange} width="80%" padding="25px" />
                             <FormLabel marginTop="20px" marginLeft="50px">Password</FormLabel>
                             <Input type='password' placeholder="Password" id="password" value={user.password} name="password" onChange={handleChange} width="80%" padding="25px" />
@@ -61,7 +61,7 @@ const [data,setData]=useState([])
                     </form>
                     <Button  marginTop="20px" width="80%" background="#007bff" padding="25px" color="white" fontWeight={"10px"}>SIGN UP WITH G SUITS</Button>
                     <Text marginTop="25px" fontSize="14px">Forgot Paasword?</Text>
-                    <Text fontSize="14px">Already have an account <NavLink to={"/login"}>Sign In</NavLink></Text>
+                    <Text fontSize="14px">Already have an account .<NavLink to={"/login"}>Sign In</NavLink></Text>
                     <Text fontSize="14px">Privacy Policy</Text>
                 </Box>
                 <Box width="80%" height="700px" backgroundImage="linear-gradient(135deg, #130CB7 10%, #52E5E7 100%)">

@@ -1,213 +1,130 @@
-import { Button } from '@chakra-ui/react'
+
+import { TabList, TabPanel, TabPanels, Tabs, Tab, Heading, Box, Text, Flex, Button ,Image} from '@chakra-ui/react';
 import React, { useState } from 'react'
-import { FaChartBar, FaClock, FaFileInvoice, FaFolder, FaPowerOff, FaTshirt } from 'react-icons/fa'
+import { FaRegCheckCircle } from "react-icons/fa";
 import "./Features.css"
-// import mytime from "../GsAssets/mytime.png"
-
-// import editproject from "../GsAssets/editproject.svg"
-// import editteam from "../GsAssets/editteam.svg"
-// import invoice from "../GsAssets/invoice.svg"
-// import report from "../GsAssets/report.svg"
-// import editpolicy from "../GsAssets/editpolicy.svg"
-import { Link } from 'react-router-dom'
-
 const Features = () => {
-    const [open1, setOpen1] = useState(false)
-    const [open2, setOpen2] = useState(false)
-    const [open3, setOpen3] = useState(false)
-    const [open4, setOpen4] = useState(false)
-    const [open5, setOpen5] = useState(false)
-    const [open6, setOpen6] = useState(false)
-    const [text1, setText1] = useState()
-    const [image1, setImage1] = useState()
-    const [text2, setText2] = useState()
-    const [image2, setImage2] = useState()
-    const [text3, setText3] = useState()
-    const [image3, setImage3] = useState()
-    const [text4, setText4] = useState()
-    const [image4, setImage4] = useState()
-    const [text5, setText5] = useState()
-    const [image5, setImage5] = useState()
-    const [text6, setText6] = useState()
-    const [image6, setImage6] = useState()
-
-    const ontoggle1 = () => {
-        setOpen2(false)
-        setOpen3(false)
-        setOpen4(false)
-        setOpen5(false)
-        setOpen6(false)
-        setOpen1(true)
-
-        setText1("Capture every task you work on. Take control over time intervals by simple time tracking.")
-        // setImage1(mytime)
-    }
-    const ontoggle2 = () => {
-        setOpen2(true)
-        setOpen3(false)
-        setOpen4(false)
-        setOpen5(false)
-        setOpen6(false)
-        setOpen1(false)
-        setText2("Create projects, set rates and budgets. Keep tracking of hours spent on tasks and see the project progress at a glance, collaborate easily, keep deadlines and prevent over budgeting")
-        // setImage2(editproject)
-    }
-    const ontoggle3 = () => {
-        setOpen2(false)
-        setOpen3(true)
-        setOpen4(false)
-        setOpen5(false)
-        setOpen6(false)
-        setOpen1(false)
-        setText3("Measure productivity and activity level of your team, assign tasks in a click, monitor workflow and distribute the workload. Syncs your teams’ work and improves efficiency.")
-        // setImage3(editteam)
-    }
-    const ontoggle4 = () => {
-        setOpen2(false)
-        setOpen3(false)
-        setOpen4(true)
-        setOpen5(false)
-        setOpen6(false)
-        setOpen1(false)
-        setText4("With the accurate billing system, set billable rates and easily create an invoice based on tracked time and expenses, and get paid promptly.")
-        // setImage4(invoice)
-    }
-    const ontoggle5 = () => {
-        setOpen2(false)
-        setOpen3(false)
-        setOpen4(false)
-        setOpen5(true)
-        setOpen6(false)
-        setOpen1(false)
-        setText5("With a flexible reporting system, you have a choice to get insights into your projects and team productivity, analyze incomes and keep costs under control")
-        // setImage5(report)
-    }
-    const ontoggle6 = () => {
-        setOpen2(false)
-        setOpen3(false)
-        setOpen4(false)
-        setOpen5(false)
-        setOpen6(true)
-        setOpen1(false)
-        setText6("Add a PTO policy for your organization, simply ask for days off, control missed workdays, manage balances and teams attendance hassle-free")
-        // setImage6(editpolicy)
-    }
-
-
-
 
     return (
-        <div className='tracking'>
-            <h1 className='heading'>Best time tracking features for your business</h1>
-            <div className='trackingfeatures'>
+        <div className='tabs'>
+            <Tabs>
+                <TabList>
+                    <Tab>Marketing Software</Tab>
+                    <Tab>Free CRM Features</Tab>
+                    <Tab>Sales Software</Tab>
+                    <Tab>Help Desk Software</Tab>
+                </TabList>
 
-                <div className='features' >
-                    <Button onClick={() => {
-                        ontoggle1()
-                    }} >
-                        <h1>
-                            <FaClock size={30} color="gray" />
-                            Time Tracking
-                        </h1>
-                    </Button>
-                </div>
-                <div className='features' >
-                    <Button onClick={() => {
+                <TabPanels>
+                    <TabPanel>
+                        <div style={{ display: "flex" }}>
+                            <div style={{ width: "64%" }} >
+                                <Box width="75%">  <Heading style={{ display: "flex", textAlign: "justify", lineHeight: "50px" }}>Market Your Business Like the World’s Best Companies</Heading>
+                                </Box>
 
-                        ontoggle2()
-                    }} >
-                        <h1>
-                            <FaFolder size={30} color="gray" />
-                            Project Management
-                        </h1>
-                    </Button>
-                </div>
-                <div className='features' >
-                    <Button onClick={() => {
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>With our comprehensive set of Marketing tools, including Email Marketing, Marketing Automation, Email Template Builder, Landing Page Builder,
+                                    Lead Generation tools, Social Suite & more, your marketing team can take things to the next level.</p>
+                                <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box>    <Text>Deal Management</Text>
 
-                        ontoggle3()
-                    }} >
-                        <h1>
-                            <FaTshirt size={30} color="gray" />
-                            Team Management
-                        </h1>
-                    </Button>
-                </div>
+                                </Flex>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /></Box> <Text marginRight={50} textAlign="left">Sales Automation</Text>
+                                    <Box marginRight={"8px"} marginLeft={"28px"}><FaRegCheckCircle color="blue" /></Box>     <Text textAlign="left">Appointment Scheduling</Text>
+                                </Flex>
+                                <Flex>
+                                    <Button backgroundColor="white" color="#6639B3" borderRadius={"0px"} boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" width="50%"  _hover="none" marginTop="20px">Explore Marketing Features</Button>
+                                </Flex>
+                            </div>
+                            <div>
+                                <Image src="https://cdn5.engagebay.com/assets/img/tabs/home/marketing_software.png" />
+                            </div>
+                        </div>
 
-                <div className='features' >
-                    <Button onClick={() => {
 
-                        ontoggle4()
-                    }} >
-                        <h1>
-                            <FaFileInvoice size={30} color="gray" />
-                            Billing & Invoicing
-                        </h1>
-                    </Button>
-                </div>
+                    </TabPanel>
+                    <TabPanel>
+                    <div style={{ display: "flex" }}>
+                            <div style={{ width: "64%" }} >
+                                <Box width="90%">  <Heading style={{textAlign: "justify", lineHeight: "50px" }}>Build Lasting Customer Relationships</Heading>
+                                </Box>
 
-                <div className='features' >
-                    <Button onClick={() => {
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>Along with a full stack of software for marketing, sales, and customer service, EngageBay also offers a completely free CRM at its core. While they’re powerful when used individually, they are at their best when used together.</p>
+                                <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box>    <Text>Deal Management</Text>
 
-                        ontoggle5()
-                    }} >
-                        <h1>
-                            <FaChartBar size={30} color="gray" />
-                            Reporting
-                        </h1>
-                    </Button>
-                </div>
+                                </Flex>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /></Box> <Text marginRight={50} textAlign="left">Sales Automation</Text>
+                                    <Box marginRight={"8px"} marginLeft={"28px"}><FaRegCheckCircle color="blue" /></Box>     <Text textAlign="left">Appointment Scheduling</Text>
+                                </Flex>
+                                <Flex>
+                                    <Button backgroundColor="white" color="#6639B3" borderRadius={"0px"} boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" width="50%"  _hover="none" marginTop="20px">Explore Marketing Features</Button>
+                                </Flex>
+                            </div>
+                            <div>
+                                <Image src="https://cdn5.engagebay.com/assets/img/tabs/home/free_crm_features.png" />
+                            </div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel>
+                    <div style={{ display: "flex" }}>
+                            <div style={{ width: "64%" }} >
+                                <Box width="75%">  <Heading style={{textAlign: "justify", lineHeight: "50px" }}>Sell Like the Pros</Heading>
+                                </Box>
 
-                <div className='features' >
-                    <Button onClick={() => {
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>With our exhaustive set of Sales tools such as Contact Management, Email Tracking, Telephony, Appointment Scheduling, Project Management, Gamification..</p>
+                                <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box>    <Text>Deal Management</Text>
 
-                        ontoggle6()
-                    }} >
-                        <h1>
-                            <FaPowerOff size={30} color="gray" />
-                            Time Off
-                        </h1>
-                    </Button>
-                </div>
-            </div>
+                                </Flex>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /></Box> <Text marginRight={50} textAlign="left">Sales Automation</Text>
+                                    <Box marginRight={"8px"} marginLeft={"28px"}><FaRegCheckCircle color="blue" /></Box>     <Text textAlign="left">Appointment Scheduling</Text>
+                                </Flex>
+                                <Flex>
+                                    <Button backgroundColor="white" color="#6639B3" borderRadius={"0px"} boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" width="50%"  _hover="none" marginTop="20px">Explore Marketing Features</Button>
+                                </Flex>
+                            </div>
+                            <div>
+                                <Image src="https://cdn5.engagebay.com/assets/img/tabs/home/sales_software.png" />
+                            </div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel>
+                    <div style={{ display: "flex" }}>
+                            <div style={{ width: "64%" }} >
+                                <Box width="95%">  <Heading style={{textAlign: "justify", lineHeight: "50px" }}>Provide Awesome Support to Your Customers</Heading>
+                                </Box>
 
-            {open1 &&
-                <div className='innertext'>
-                    <h1>{text1} <br /> <Link to=""><span className='learn'>Learn More </span></Link> </h1>
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>With our seamless stack of Service tools such as Ticketing, Helpdesk, Customer Feedback Forms, Knowledge Base, Canned Responses and your support team can now connect better, resolve faster, and retain your customers for a lifetime.</p>
+                                <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box>    <Text>Deal Management</Text>
 
-                    <img src={image1} alt="" />
-                </div>
-            }
-            {open2 &&
-                <div className='innertext'>
-                    <h1>{text2} <br /> <Link to=""><span className='learn'>Learn More </span></Link></h1>
-                    <img src={image2} alt="" />
-                </div>
-            }
-            {open3 &&
-                <div className='innertext'>
-                    <h1>{text3} <br /> <Link to=""><span className='learn'>Learn More </span></Link></h1>
-                    <img src={image3} alt="" />
-                </div>
-            }
-            {open4 &&
-                <div className='innertext'>
-                    <h1>{text4} <br /> <Link to=""><span className='learn'>Learn More </span></Link></h1>
-                    <img src={image4} alt="" />
-                </div>
-            }
-            {open5 &&
-                <div className='innertext'>
-                    <h1>{text5} <br /> <Link to=""><span className='learn'>Learn More </span></Link></h1>
-                    <img src={image5} alt="" />
-                </div>
-            }
-            {open6 &&
-                <div className='innertext'>
-                    <h1>{text6} <br /> <Link to=""><span className='learn'>Learn More </span></Link></h1>
-                    <img src={image6} alt="" />
-                </div>
-            }
+                                </Flex>
+                                <Flex>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /></Box> <Text marginRight={50} textAlign="left">Sales Automation</Text>
+                                    <Box marginRight={"8px"} marginLeft={"28px"}><FaRegCheckCircle color="blue" /></Box>     <Text textAlign="left">Appointment Scheduling</Text>
+                                </Flex>
+                                <Flex>
+                                    <Button backgroundColor="white" color="#6639B3" borderRadius={"0px"} boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" width="50%"  _hover="none" marginTop="20px">Explore Marketing Features</Button>
+                                </Flex>
+                            </div>
+                            <div>
+                                <Image src="https://cdn5.engagebay.com/assets/img/tabs/home/helpdesk_software.png" />
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabPanels>
+            </Tabs>
         </div>
 
 
