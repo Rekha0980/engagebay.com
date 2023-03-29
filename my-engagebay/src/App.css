@@ -43,7 +43,9 @@
 .main{
   display: flex;
   justify-content: space-around;
-  
+ position: fixed;
+top:-5px;
+left:50px;
   padding: 20px;
   height: 60px;
   width: 90%;

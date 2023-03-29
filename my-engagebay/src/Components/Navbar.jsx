@@ -7,7 +7,7 @@ function Navbar() {
     return (
      <div className="main">
       <div>
-      <Link to="/"><img id="logo"src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg" alt="netlogo" /></Link>
+      <Link to="/"><img id="logo"src="https://www.engagebay.com/assets/img/engagebay-logo.svg" alt="netlogo" /></Link>
       </div>
     
       <div >
@@ -40,7 +40,7 @@ function Navbar() {
       <div><p>Blog</p></div>
         <div><Link to="/login">Login</Link></div>
      <div><button  className="btn">Free Demo</button></div>
-     <div ><button  className="btn1">Free Signup</button></div>
+     <div ><Link to="/signup"><button  className="btn1">Free Signup</button></Link></div>
     
      </div>
     );
