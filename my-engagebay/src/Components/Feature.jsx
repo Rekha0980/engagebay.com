@@ -9,24 +9,24 @@ const Features = () => {
         <div className='tabs'>
             <Tabs>
                 <TabList>
-                    <Tab>Marketing Software</Tab>
-                    <Tab>Free CRM Features</Tab>
-                    <Tab>Sales Software</Tab>
-                    <Tab>Help Desk Software</Tab>
+                    <Tab fontSize={"23px"}  fontWeight="semibold">Marketing Software</Tab>
+                    <Tab  fontSize={"23px"} fontWeight="semibold" >Free CRM Features</Tab>
+                    <Tab  fontSize={"23px"} fontWeight="semibold">Sales Software</Tab>
+                    <Tab  fontSize={"23px"} fontWeight="semibold">Help Desk Software</Tab>
                 </TabList>
 
-                <TabPanels>
+                <TabPanels marginTop={"60px"}>
                     <TabPanel>
                         <div style={{ display: "flex" }}>
                             <div style={{ width: "64%" }} >
-                                <Box width="75%">  <Heading style={{ display: "flex", textAlign: "justify", lineHeight: "50px" }}>Market Your Business Like the World’s Best Companies</Heading>
+                                <Box width="75%">  <Heading style={{ textAlign: "justify", lineHeight: "50px" }}>Market Your Business Like the World’s Best Companies</Heading>
                                 </Box>
 
-                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>With our comprehensive set of Marketing tools, including Email Marketing, Marketing Automation, Email Template Builder, Landing Page Builder,
+                                <p style={{ fontSize:"14px", textAlign: "justify", marginTop: "30px" ,color: "#636774"}}>With our comprehensive set of Marketing tools, including Email Marketing, Marketing Automation, Email Template Builder, Landing Page Builder,
                                     Lead Generation tools, Social Suite & more, your marketing team can take things to the next level.</p>
                                 <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
                                 <Flex>
-                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
+                                    <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text  marginRight={50} marginBottom="20px">Contact Management</Text>
                                     <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box>    <Text>Deal Management</Text>
 
                                 </Flex>
@@ -51,7 +51,7 @@ const Features = () => {
                                 <Box width="90%">  <Heading style={{textAlign: "justify", lineHeight: "50px" }}>Build Lasting Customer Relationships</Heading>
                                 </Box>
 
-                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>Along with a full stack of software for marketing, sales, and customer service, EngageBay also offers a completely free CRM at its core. While they’re powerful when used individually, they are at their best when used together.</p>
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" ,color: "#636774",fontSize:"14px"}}>Along with a full stack of software for marketing, sales, and customer service, EngageBay also offers a completely free CRM at its core. While they’re powerful when used individually, they are at their best when used together.</p>
                                 <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
                                 <Flex>
                                     <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
@@ -77,7 +77,7 @@ const Features = () => {
                                 <Box width="75%">  <Heading style={{textAlign: "justify", lineHeight: "50px" }}>Sell Like the Pros</Heading>
                                 </Box>
 
-                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>With our exhaustive set of Sales tools such as Contact Management, Email Tracking, Telephony, Appointment Scheduling, Project Management, Gamification..</p>
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" ,color: "#636774",fontSize:"14px"}}>With our exhaustive set of Sales tools such as Contact Management, Email Tracking, Telephony, Appointment Scheduling, Project Management, Gamification..</p>
                                 <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
                                 <Flex>
                                     <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
@@ -103,7 +103,7 @@ const Features = () => {
                                 <Box width="95%">  <Heading style={{textAlign: "justify", lineHeight: "50px" }}>Provide Awesome Support to Your Customers</Heading>
                                 </Box>
 
-                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px" }}>With our seamless stack of Service tools such as Ticketing, Helpdesk, Customer Feedback Forms, Knowledge Base, Canned Responses and your support team can now connect better, resolve faster, and retain your customers for a lifetime.</p>
+                                <p style={{ display: "flex", textAlign: "justify", marginTop: "30px",color: "#636774",fontSize:"14px" }}>With our seamless stack of Service tools such as Ticketing, Helpdesk, Customer Feedback Forms, Knowledge Base, Canned Responses and your support team can now connect better, resolve faster, and retain your customers for a lifetime.</p>
                                 <Text textAlign="left" marginBottom="20px" marginTop={"20px"} fontWeight={600} fontSize={"14px"}>POPULAR MARKETING FEATURES</Text>
                                 <Flex>
                                     <Box marginRight={"8px"}><FaRegCheckCircle color="blue" /> </Box><Text marginRight={50} marginBottom="20px">Contact Management</Text>
