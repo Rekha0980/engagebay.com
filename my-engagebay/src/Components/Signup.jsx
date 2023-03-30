@@ -24,9 +24,9 @@ const [data,setData]=useState([])
         else if(email===""){
             alert("email field is required")
         }
-        else if(!email.includes("@")===""){
-            alert("enter valid email")
-        }
+        // else if(!email.includes("@")===""){
+        //     alert("enter valid email")
+        // }
         else if(password===""){
             alert("password field is required")
         }
